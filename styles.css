@@ -1,0 +1,237 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%; 
+}
+ /*SIDEBAR CONTENT*/
+.sidebar {
+	width: 317px;
+	height: 100vh;
+	position: fixed;
+}
+.sidebar #logo{
+	height: 35px;
+	width: 40px;
+	margin-top: 10px;
+}
+.sidebar .icontainer {
+	display:flex;
+	flex-direction:column;
+}
+.sidebar .icontainer img {
+	height: 30px;
+	width: 30px;
+	margin-bottom: 20px;
+	margin-left: 60px;
+}
+.sidebar .icontext {
+	 position: absolute;
+ 	 top: 40px;
+ 	 right: 0;
+ 	 width: 245px;
+ 	 height: 100px;
+}
+.sidebar .icontext ul {
+	line-height:310%;
+}
+.icontext ul li{
+	list-style-type:none;
+	font-family: verdana;
+        font-size: 20px;
+	color: rgb(85, 93, 80);
+}
+.sidebar .btncontainer {
+	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+.sidebar #btn {
+	background: rgb(30,144,255);
+	border-radius: 30px;
+	color: white;
+	height:50px;
+   	width:220px;
+	font-size: 15px;
+	font-family: verdana;
+	border: none;
+}
+.sidebar .profile {
+	padding-top: 75px;
+	padding-left: 65px;
+	bottom: 0;
+	text-align: left;
+}
+.sidebar .profile img {
+	height: 45px;
+   	width: 45px;
+	border-radius: 50%;
+}
+.sidebar .profile ul {
+	float: right;
+	position: absolute;
+ 	top: 570px;
+ 	right: 0;
+ 	width: 200px;
+ 	height: 0;
+	line-height:130%;
+}
+.sidebar .profile ul li {
+	list-style-type:none;
+	font-family: verdana;
+	font-size: 15px;
+}
+.sidebar .profile p {
+	float: right;
+	margin-top: -5px;
+	font-family: verdana;
+	font-size: 18px;
+	position: absolute;
+ 	top: 600px;
+ 	right: 0;
+ 	width: 50px;
+ 	height: 0;
+}
+ /*CENTER CONTENT*/
+.content {
+	border: 1px solid rgba(0, 0, 0, .1);
+	margin-left: 319px;
+	width: 597px;
+	height: 100vh;
+	position: fixed;
+}
+.content h1 {
+	font-family:verdana;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.content .texts {	
+	display: flex;
+	justify-content: space-around;
+	font-family:verdana;
+	font-size: 15px;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+} 
+.content .texts span {
+	margin-top: 10px;
+}
+.content .whats-happening {
+	border: 1px solid rgba(0, 0, 0, .1);
+	padding-bottom:30px;
+}
+.content .whats-happening img{
+	margin-top: 10px;
+	margin-left: 13px;
+	height: 55px;
+   	width: 55px;
+	border-radius: 50%;
+}
+.content .whats-happening p{
+	float: right;
+	margin-top: -40px;
+	margin-right: 350px;	
+	margin-left: 80px;
+	font-family:ariel;
+	font-size: 20px;
+	color: grey;
+}
+.content .btncontainer2 {
+	display: flex;
+ 	align-items: right;
+ 	justify-content: right;
+}
+.content #btn2 {
+	margin-top: -50px;
+	margin-right: 20px;
+	background: rgb(30,144,255);
+	border-radius: 30px;
+	color: white;
+	height:40px;
+   	width:80px;
+	font-size: 15px;
+	font-family: verdana;
+	border: none;
+	opacity: 0.5;
+}
+ /*RIGHTSIDE CONTENT*/
+.rightside {
+	margin-left: 917px;
+	width: 446px;
+	height: 100vh;
+	border: 1px solid rgba(0, 0, 0, .1);
+	position: fixed;
+}
+.rightside .btncontainer3 {
+	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+.rightside #btn3 {
+	margin-top: 10px;
+	background: #E6E6E6;
+	border-radius: 30px;
+	height:45px;
+   	width:350px;
+	font-size: 15px;
+	font-family: arial;
+	border: none;
+	text-align: center;
+	opacity: 0.5;
+}
+.rightside .trends {
+	background: #F2F2F2;
+	border-radius: 10px;
+	margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+	margin-top: 20px;
+	width: 350px;
+	font-family: verdana;
+	height: 500px;
+}
+.rightside .trends .text-1{
+        font-size: 20px;
+        margin-bottom: 30px;
+	margin-left: 10px;
+	margin-top: -370px;
+}
+.rightside .trends .text-2{
+	color: grey;
+	font-size: 13px;
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+.rightside .trends .text-3{
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+.rightside .trends .text-4{
+	color: grey;
+	font-size: 13px;
+	margin-left: 10px;
+}
+.rightside .trends p {
+	float: right;
+	margin-top: -5px;
+	font-family: verdana;
+	font-size: 18px;
+	position: absolute;
+ 	top: 150px;
+ 	right: 0;
+ 	width: 80px;
+ 	height: 0;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.sidebar {
+	display: none;
+}
+.content {
+	position: relative;
+	margin:0;
+}
+.rightside {
+	display: none;
+}
+}
